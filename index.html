@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aileen Wong</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Antic|Lustria|Montserrat:900|Raleway:200|Rozha+One" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ec69052e32.js"></script>
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+
+      return false;
+  });
+  </script>
+</head>
+<body>
+  <header>
+    <div id="navWrapper">
+      <div id="navBar">
+        <div><a class="navLink" id="home" href="#homeWrapper">Home</a></div>
+        <div><a class="navLink" id="work" href="#workWrapper">Work</a></div>
+        <div><a class="navLink" id="skills" href="#skillsWrapper">Skills</a></div>
+        <div><a class="navLink" id="about" href="#aboutWrapper">About</a></div>
+        <div><a class="navLink" id="contact" href="#contactWrapper">Contact</a></div>
+      </div>
+      <div id="socialLinks">
+        <a href="https://github.com/aileenmwong"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/aileenwong/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/aileenmwong/?hl=en"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+        <a href="mailto:aileen.m.wong@gmail.com"><i class="fa fa-envelope-open fa-lg" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+  </header>
+  <div id="page1">
+    <a id="homeWrapper" class="smooth"></a>
+      <div id="homeHeaderWrap">
+        <p id="homeHeader">Be Bold</p>
+        <p id="homeTagline">Let your website stand out.</p>
+        <div id="nameLogo">
+          <p id="homeName">Aileen Wong</p>
+          <p id="homeJob">web developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page2">
+    <a id="workWrapper" class="smooth"></a>
+      <h1 id="workHeader">selected examples of my work</h1>
+      <div class="workItem">
+        <div id="dateADog"></div>
+        <div id="workText">
+          <h1>Date A Dog</h1>
+          <div id="workLanguages">
+            <p>HTML5, CSS3, Vanilla Javascript, jQuery</p>
+          </div>
+          <div id="workWebsite">
+            <a href="http://dateadog.bitballoon.com">Go to Date A Dog</a>
+          </div>
+        </div>
+      </div>
+      </div>
+<!--       <div class="greenline"></div> -->
+      <div class="workItem">
+        <div id="gramCentralStation">
+          <h1>Gram Central Station</h1>
+          <div id="workLanguages">
+            <p>Node/Express</p>
+          </div>
+          <div id="workWebsite">
+            <a href="#">Go to Gram Central Station</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="workItem">
+        <div id="makeMeAnOutfit">
+          <h1>Make Me An Outfit</h1>
+          <div id="workLanguages">
+            <p>React/Node/Express</p>
+          </div>
+          <div id="workWebsite">
+            <a href="#">Go to Make Me an Outfit</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="workItem">
+        <div id="racers">
+          <h1>Italian Racers</h1>
+          <div id="workLanguages">
+            <p>Vanilla Javascript</p>
+          </div>
+          <div id="workWebsite">
+            <a href="http://italianracers.bitballoon.com">Go to Italian Racers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page3">
+    <a id="skillsWrapper" class="smooth"></a>
+      <h1 id="skillsHeader">Skills</h1>
+      <div id="skillsSectionWrapper">
+        <div class="skillsSections">
+          <div class="animalHead" id="bunnyHead"></div>
+          <h3 class="skillsSectionHeader">front-end development</h3>
+          <p>HTML5, CSS3, React</p>
+        </div>
+        <div class="skillsSections">
+          <div class="animalHead" id="bearHead"></div>
+          <h3 class="skillsSectionHeader">back-end development</h3>
+          <p>Node, Express</p>
+        </div>
+        <div class="skillsSections">
+          <div class="animalHead" id="foxHead"></div>
+          <h3 class="skillsSectionHeader">project management</h3>
+          <p class="skillsSectionContent">Managed production teams for 3 years</p>
+        </div>
+        <div class="skillsSections">
+          <div class="animalHead" id="deerHead"></div>
+          <h3 class="skillsSectionHeader">design</h3>
+          <p>Photoshop</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page4">
+    <a id="aboutWrapper" class="smooth"></a>
+      <h1 id="aboutHeader">About Me</h1>
+      <div>
+        <p id="aboutParagraph">paragraph about me</p>
+      </div>
+    </div>
+  </div>
+  <div id="page5">
+    <a id="contactWrapper" class="smooth"></a>
+      <h1 id="contactHeader">Get In Touch</h1>
+      <div id="contactParagraph">
+        <p>Let's chat! I'd love to hear about your projects and collaborate.</p>
+        <div id="contactButton">
+          <div><a href="mailto:aileen.m.wong@gmail.com">aileen DOT m DOT wong AT gmail DOT com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
