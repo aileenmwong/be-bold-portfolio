@@ -106,7 +106,7 @@ i {
 
 #workWrapper {
   max-width: 100%;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
 }
 
 #workHeader {
@@ -170,7 +170,7 @@ i {
 /*Skills Page*/
 #skillsWrapper {
   max-width: 100%;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
 }
 
 #skillsHeader {
@@ -238,30 +238,63 @@ i {
 
 
 /*About Page*/
+
 #aboutWrapper {
   max-width: 100%;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   padding-bottom: 30px;
+}
+
+#aboutMeBackground {
+  background-image: url(../assets/about-me.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+  position: relative;
+  background-position: left bottom;
+}
+
+#aboutText {
+  width: 600px;
+  height: 600px;
+  background-color: rgba(0,0,0,.7);
+  margin-left: 10%;
+  margin-top: 3%;
+  position: absolute;
 }
 
 #aboutHeader {
   font-family: 'Rozha One', serif;
-  font-size: 24px;
+  font-size: 50px;
   text-align: center;
+  color: white;
 }
 
 #aboutParagraph {
   margin: 0 auto;
   max-width: 70%;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  color: white;
 }
 
 /*Contact Page*/
 #contactWrapper {
   max-width: 100%;
   border: 1px solid black;
+}
+
+#contactMeImage {
+  background-image: url(../assets/contact-me.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 700px;
+  background-position: left bottom;
+
 }
 
 #contactHeader {
@@ -273,7 +306,14 @@ i {
 #contactParagraph {
   margin: 0 auto;
   max-width: 70%;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+
+#contactButton {
+  width: 500px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
 }
