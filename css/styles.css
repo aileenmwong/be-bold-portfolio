@@ -2,9 +2,16 @@
 font-family: 'Antic', sans-serif;
 font-family: 'Rozha One', serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Fredoka One', cursive;
 font-family: 'Raleway', sans-serif;*/
 
 /*Header*/
+a {
+  text-decoration: none;
+}
+
 
 #navWrapper {
   display: flex;
@@ -51,7 +58,7 @@ i {
 }
 
 #homeName {
-  font-family: 'Rozha One', serif;
+  font-family: 'Concert One', cursive;
   margin-top: 100px;
   font-size: 25px;
 }
@@ -59,7 +66,7 @@ i {
 #homeJob {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 #homeWrapper {
@@ -74,14 +81,14 @@ i {
 
 #homeHeader {
   color: rgb(150, 41, 56);
-  font-family: 'Rozha One', serif;
+  font-family: 'Concert One', cursive;
   font-size: 120px;
   margin-top: -80px;
   text-shadow: 2px 2px #000000;
 }
 
 #homeTagline {
-  margin-top: -150px;
+  margin-top: -80px;
   color: rgb(150, 41, 56);
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
@@ -99,73 +106,165 @@ i {
 
 /*Work Page*/
 
-/*.greenline {
-  height: 2px;
-  width: 500px;
-}*/
-
 #workWrapper {
   max-width: 100%;
 /*  border: 1px solid black;*/
 }
 
 #workHeader {
-  font-family: 'Rozha One', serif;
-  font-size: 24px;
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
   text-align: center;
+}
+
+#workItemWrapper {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .workItem {
-  max-width: 100%;
-/*  border: 1px solid black;*/
+  width: 300px;
+  height: 300px;
   position: relative;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 1px;
 }
 
-#workText {
+#workTextWrapper {
   position: absolute;
-  z-index: 1;
-  margin-top: -300px;
-  margin-left: 40%;
+}
+
+#workName {
   text-align: center;
 }
 
 #dateADog {
-  background-image: url(../assets/dateadoghome-h.png);
-  background-size: cover;
-  height: 400px;
-  filter: blur(5px) grayscale(50%);
-  transition: .2s ease-in-out;
-  position: relative;
-  z-index: -2;
+  background-image: url(../assets/work-thumbs/dogthumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
 }
 
 #dateADog:hover {
-  filter: blur(0px) grayscale(0);
-  background-color: none;
+
+}
+
+#dogItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+#dogLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#dogWebsite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #gramCentralStation {
-  background-image: url(../assets/gcs-h.png);
-  background-size: cover;
-  height: 400px;
+  background-image: url(../assets/work-thumbs/gcsthumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+#gramCentralStation:hover {
+
+}
+
+#gramItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#gramLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#gramWebsite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #makeMeAnOutfit {
-  background-image: url(../assets/makemeanoutfit-h.png);
-  background-size: cover;
-  height: 400px;
+  background-image: url(../assets/work-thumbs/outfitthumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+#makeMeAnOutfit:hover {
+
+}
+
+#outfitItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#outfitLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#outfitWebsite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #racers {
-  background-image: url(../assets/divracers-h.png);
-  background-size: cover;
-  height: 400px;
+  background-image: url(../assets/work-thumbs/divracer.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
 }
 
+#racers:hover {
 
+}
+
+#racersItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#racersLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#racersWebsite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
 
 /*Skills Page*/
 #skillsWrapper {
@@ -174,8 +273,8 @@ i {
 }
 
 #skillsHeader {
-  font-family: 'Rozha One', serif;
-  font-size: 24px;
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -189,6 +288,7 @@ i {
 .skillsSectionHeader {
   position: relative;
   margin-bottom: 0px;
+  margin-top: 0;
 }
 
 .skillsSectionContent {
@@ -203,6 +303,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 }
 
 .animalHead {
@@ -263,10 +364,11 @@ i {
   margin-left: 10%;
   margin-top: 3%;
   position: absolute;
+  border-radius: 10px;
 }
 
 #aboutHeader {
-  font-family: 'Rozha One', serif;
+  font-family: 'Concert One', cursive;
   font-size: 50px;
   text-align: center;
   color: white;
@@ -298,9 +400,10 @@ i {
 }
 
 #contactHeader {
-  font-family: 'Rozha One', serif;
-  font-size: 24px;
+  font-family: 'Concert One', cursive;
+  font-size: 50px;
   text-align: center;
+  margin-top: 0;
 }
 
 #contactParagraph {
@@ -308,12 +411,23 @@ i {
   max-width: 70%;
 /*  border: 1px solid black;*/
   font-family: 'Raleway', sans-serif;
+  font-size: 24px;
   text-align: center;
+  padding: 10px;
 }
 
 #contactButton {
   width: 500px;
-  height: 40px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: rgb(233,231,232);
   text-decoration: none;
-  color: white;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  color: rgba(148, 176, 167, 1);
 }
+
