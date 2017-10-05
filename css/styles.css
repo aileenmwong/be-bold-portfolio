@@ -7,6 +7,9 @@ font-family: 'Concert One', cursive;
 font-family: 'Fredoka One', cursive;
 font-family: 'Raleway', sans-serif;*/
 
+/*CSS Drop down animation from:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop
+*/
 /*Header*/
 a {
   text-decoration: none;
@@ -130,10 +133,12 @@ i {
   width: 300px;
   height: 300px;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid gray;
   margin: 10px;
-  border-radius: 1px;
+  border-radius: 10px;
+  position: relative;
 }
+
 
 #workTextWrapper {
   position: absolute;
@@ -143,21 +148,42 @@ i {
   text-align: center;
 }
 
+.workText {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(150, 41, 56, .9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #dateADog {
   background-image: url(../assets/work-thumbs/dogthumb.png);
   background-size: contain;
   height: 300px;
   width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
 }
 
-#dateADog:hover {
-
+#dateADog:hover .workText{
+  bottom: 0;
+  height: 100%;
 }
 
 #dogItemHeader {
   font-family: 'Concert One', cursive;
   font-size: 40px;
   text-align: center;
+  margin: 0;
 }
 
 #dogLanguages {
@@ -166,11 +192,15 @@ i {
   text-align: center;
 }
 
-#dogWebsite {
-  font-family: 'Raleway', sans-serif;
+.workWebsite {
+  font-family: 'Concert One', cursive;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(150, 41, 56);
 }
 
 #gramCentralStation {
@@ -178,10 +208,13 @@ i {
   background-size: contain;
   height: 300px;
   width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
 }
 
-#gramCentralStation:hover {
-
+#gramCentralStation:hover .workText{
+  bottom: 0;
+  height: 100%;
 }
 
 #gramItemHeader {
@@ -209,10 +242,13 @@ i {
   background-size: contain;
   height: 300px;
   width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
 }
 
-#makeMeAnOutfit:hover {
-
+#makeMeAnOutfit:hover .workText{
+  bottom: 0;
+  height: 100%;
 }
 
 #outfitItemHeader {
@@ -240,10 +276,13 @@ i {
   background-size: contain;
   height: 300px;
   width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
 }
 
-#racers:hover {
-
+#racers:hover .workText{
+  bottom: 0;
+  height: 100%;
 }
 
 #racersItemHeader {
