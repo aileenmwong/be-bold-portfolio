@@ -10,12 +10,17 @@ font-family: 'Raleway', sans-serif;*/
 /*CSS Drop down animation from:
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop
 */
-/*Header*/
+
 a {
   text-decoration: none;
 }
 
+.pages {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+/*Header*/
 #navWrapper {
   display: flex;
   justify-content: space-between;
@@ -80,13 +85,14 @@ i {
 
 #homeHeaderWrap {
   margin-left: 60%;
+
 }
 
 #homeHeader {
   color: rgb(150, 41, 56);
   font-family: 'Concert One', cursive;
   font-size: 120px;
-  margin-top: -80px;
+  margin-top: -10px;
   text-shadow: 2px 2px #000000;
 }
 
@@ -99,11 +105,28 @@ i {
   padding-right: 25px;
 }
 
-#page1 {
-  background-image: url(../assets/home-page.png);
+#homeImage {
+  background-image: url(../assets/home-page-no-bowtie.png);
   background-size: cover;
   height: 700px;
-  margin-top: 80px;
+  display: flex;
+}
+
+#bowtie {
+  background-image: url(../assets/bowtie.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 60px;
+  margin-left: 126px;
+  margin-top: 155px;
+  position: absolute;
+  animation: flash 2s;
+}
+
+@keyframes flash {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 
@@ -230,13 +253,6 @@ i {
   text-align: center;
 }
 
-#gramWebsite {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-}
-
 #makeMeAnOutfit {
   background-image: url(../assets/work-thumbs/outfitthumb.png);
   background-size: contain;
@@ -262,13 +278,6 @@ i {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
-}
-
-#outfitWebsite {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
 }
 
 #racers {
@@ -298,12 +307,60 @@ i {
   text-align: center;
 }
 
-#racersWebsite {
+#weather {
+  background-image: url(../assets/work-thumbs/weatherthumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
+}
+
+#weather:hover .workText{
+  bottom: 0;
+  height: 100%;
+}
+
+#weatherItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#weatherLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
-  text-decoration: none;
 }
+
+#tweeder {
+  background-image: url(../assets/work-thumbs/tweederthumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
+}
+
+#tweeder:hover .workText{
+  bottom: 0;
+  height: 100%;
+}
+
+#tweederItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#tweederLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
 
 /*Skills Page*/
 #skillsWrapper {
@@ -351,7 +408,7 @@ i {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-
+  margin: 30px;
 }
 
 #bunnyHead {
@@ -413,19 +470,25 @@ i {
   color: white;
 }
 
-#aboutParagraph {
+.aboutParagraph {
   margin: 0 auto;
   max-width: 70%;
-/*  border: 1px solid black;*/
   font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   text-align: center;
   color: white;
+  padding: 5px;
+}
+
+span {
+  color: rgb(150, 41, 56);
 }
 
 /*Contact Page*/
 #contactWrapper {
   max-width: 100%;
   border: 1px solid black;
+  margin-top: 0;
 }
 
 #contactMeImage {
@@ -435,7 +498,6 @@ i {
   max-width: 100%;
   height: 700px;
   background-position: left bottom;
-
 }
 
 #contactHeader {
