@@ -11,6 +11,25 @@ font-family: 'Raleway', sans-serif;*/
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop
 */
 
+body {
+    padding-top: 30px;
+}
+
+header {
+    background: #ffffff;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 100;
+    padding-top: 10px;
+}
+
+.nav-up {
+    top: -30px;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,6 +37,9 @@ a {
 .pages {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size:0;
 }
 
 /*Header*/
@@ -56,9 +78,13 @@ a {
 }
 
 i {
-  padding: 10px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
+}
+
+#emailLink {
+  margin-right: 10px;
 }
 
 /*Home Page*/
@@ -67,7 +93,6 @@ i {
 
 #homeName {
   font-family: 'Concert One', cursive;
-  margin-top: 100px;
   font-size: 25px;
 }
 
@@ -91,13 +116,13 @@ i {
 #homeHeader {
   color: rgb(150, 41, 56);
   font-family: 'Concert One', cursive;
-  font-size: 120px;
-  margin-top: -10px;
+  font-size: 90px;
+  /*margin-top: -10px;*/
   text-shadow: 2px 2px #000000;
 }
 
 #homeTagline {
-  margin-top: -80px;
+  margin-top: -70px;
   color: rgb(150, 41, 56);
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
@@ -118,8 +143,8 @@ i {
   background-repeat: no-repeat;
   height: 80px;
   width: 60px;
-  margin-left: 126px;
-  margin-top: 155px;
+  margin-left: 138px;
+  margin-top: 170px;
   position: absolute;
   animation: flash 2s;
 }
@@ -188,6 +213,14 @@ i {
   flex-direction: column;
 }
 
+.deployedSite {
+  margin: 5px;
+}
+
+.github {
+  margin: 5px;
+}
+
 #dateADog {
   background-image: url(../assets/work-thumbs/dogthumb.png);
   background-size: contain;
@@ -207,12 +240,14 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #dogLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .workWebsite {
@@ -245,12 +280,14 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #gramLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 #makeMeAnOutfit {
@@ -299,12 +336,14 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #racersLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 #weather {
@@ -326,12 +365,14 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #weatherLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 #tweeder {
@@ -353,12 +394,14 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #tweederLanguages {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 
@@ -389,11 +432,16 @@ i {
 
 .skillsSectionContent {
   position: relative;
+  height: 100px;
+  width: 200px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 16px;
 }
 
 .skillsSections {
   position: relative;
-  max-width: 25%;
+  width: 25%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   display: flex;
@@ -474,14 +522,14 @@ i {
   margin: 0 auto;
   max-width: 70%;
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 
 span {
-  color: rgb(150, 41, 56);
+  color: rgb(250, 100, 100);
 }
 
 /*Contact Page*/
@@ -489,6 +537,7 @@ span {
   max-width: 100%;
   border: 1px solid black;
   margin-top: 0;
+
 }
 
 #contactMeImage {
@@ -504,6 +553,7 @@ span {
   font-family: 'Concert One', cursive;
   font-size: 50px;
   text-align: center;
+  padding-top: 20px;
   margin-top: 0;
 }
 

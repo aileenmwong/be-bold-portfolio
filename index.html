@@ -10,53 +10,41 @@
   src="http://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-  <script>
-  $('.smooth').on('click', function() {
-      $.smoothScroll({
-          scrollElement: $('body'),
-          scrollTarget: '#' + this.id
-      });
-
-      return false;
-  });
-  </script>
 </head>
 <body>
   <header>
     <div id="navWrapper">
       <div id="navBar">
-        <div><a class="navLink" id="home" href="#homeWrapper">Home</a></div>
-        <div><a class="navLink" id="work" href="#workWrapper">Work</a></div>
-        <div><a class="navLink" id="skills" href="#skillsWrapper">Skills</a></div>
-        <div><a class="navLink" id="about" href="#aboutWrapper">About</a></div>
-        <div><a class="navLink" id="contact" href="#contactWrapper">Contact</a></div>
+        <div><a class="navLink" id="home" href="#homeWrapper" class="smoothScroll">Home</a></div>
+        <div><a class="navLink" id="work" href="#workWrapper" class="smoothScroll">Work</a></div>
+        <div><a class="navLink" id="skills" href="#skillsWrapper" class="smoothScroll">Skills</a></div>
+        <div><a class="navLink" id="about" href="#aboutWrapper" class="smoothScroll">About</a></div>
+        <div><a class="navLink" id="contact" href="#contactWrapper" class="smoothScroll">Contact</a></div>
       </div>
       <div id="socialLinks">
         <a href="https://github.com/aileenmwong"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/in/aileenwong/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/aileenmwong/?hl=en"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-        <a href="mailto:aileen.m.wong@gmail.com"><i class="fa fa-envelope-open fa-lg" aria-hidden="true"></i></a>
+        <a href="mailto:aileen.m.wong@gmail.com"><i class="fa fa-envelope-open fa-lg" aria-hidden="true" id="emailLink"></i></a>
       </div>
     </div>
   </header>
   <div class="pages" id="page1">
-    <a id="homeWrapper" class="smooth"></a>
+    <a id="homeWrapper"></a>
     <div id="homeImage">
     <div id="bowtie"></div>
       <div id="homeHeaderWrap">
-        <p id="homeHeader">Be Bold</p>
-        <p id="homeTagline">Let your website stand out.</p>
-        <div id="nameLogo">
+        <p id="homeHeader">Aileen Wong</p>
+        <p id="homeTagline">web developer</p>
+<!--         <div id="nameLogo">
           <p id="homeName">Aileen Wong</p>
           <p id="homeJob">web developer</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
   <div class="pages" id="page2">
-    <a id="workWrapper" class="smooth"></a>
+    <a id="workWrapper"></a>
       <h1 id="workHeader">selected examples of my work</h1>
         <div id="workItemWrapper">
           <div class="workItem">
@@ -67,7 +55,8 @@
                   <p>HTML/CSS/JS</p>
                 </div>
                 <div class="workWebsite">
-                  <a href="http://dateadog.bitballoon.com">Go to Date a Dog</a>
+                  <div class="deployedSite"><a href="http://dateadog.bitballoon.com">Go to Date a Dog</a></div>
+                  <div class="github"><a href="https://git.generalassemb.ly/aileenmwong/project-1">See the Github Repo</a></div>
                 </div>
               </div>
             </div>
@@ -80,7 +69,8 @@
                   <p>Node/Express</p>
                 </div>
                 <div class="workWebsite">
-                  <a href="https://blooming-gorge-62801.herokuapp.com/">Go to Gram Central Station</a>
+                  <div class="deployedSite"><a href="https://blooming-gorge-62801.herokuapp.com/">Go to Gram Central Station</a></div>
+                  <div class="github"><a href="https://git.generalassemb.ly/aileenmwong/project-2">See the Github Repo</a></div>
                 </div>
               </div>
             </div>
@@ -93,7 +83,8 @@
                   <p>React/Node/Express</p>
                 </div>
                 <div class="workWebsite">
-                  <a href="https://make-an-outfit.herokuapp.com/">Go to Make Me an Outfit</a>
+                  <div class="deployedSite"><a href="https://make-an-outfit.herokuapp.com/">Go to Make Me an Outfit</a></div>
+                  <div class="github"><a href="https://github.com/git-tzarita/Make-Me-An-Outfit">See the Github Repo</a></div>
                 </div>
               </div>
             </div>
@@ -106,7 +97,8 @@
                   <p>Vanilla Javascript</p>
                 </div>
                 <div class="workWebsite">
-                  <a href="http://italianracers.bitballoon.com">Go to Italian Racers</a>
+                  <div class="deployedSite"><a href="http://italianracers.bitballoon.com">Go to Italian Racers</a></div>
+                  <div class="github"><a href="https://git.generalassemb.ly/aileenmwong/racer-hw">See the Github Repo</a></div>
                 </div>
               </div>
             </div>
@@ -119,12 +111,13 @@
                   <p>HTML5/CSS3/Vanilla Javascript</p>
                 </div>
                 <div class="workWebsite">
-                  <a href="http://rainbow-weather.bitballoon.com">Go to Weather App</a>
+                  <div class="deployedSite"><a href="http://rainbow-weather.bitballoon.com">Go to Weather App</a></div>
+                  <div class="github"><a href="https://git.generalassemb.ly/aileenmwong/node-apis-homework">See the Github Repo</a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="workItem">
+<!--           <div class="workItem">
             <div id="tweeder">
               <div class="workText">
                 <h1 id="tweederItemHeader">Tweeder</h1>
@@ -136,39 +129,39 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
     </div>
   </div>
   <div class="pages" id="page3">
-    <a id="skillsWrapper" class="smooth"></a>
+    <a id="skillsWrapper"></a>
       <h1 id="skillsHeader">Skills</h1>
       <div id="skillsSectionWrapper">
         <div class="skillsSections">
           <div class="animalHead" id="bunnyHead"></div>
           <h3 class="skillsSectionHeader">front-end development</h3>
-          <p>HTML5, CSS3, React</p>
+          <p class="skillsSectionContent">I'm well versed in the latest front-end languages including React, HTML5, CSS3.</p>
         </div>
         <div class="skillsSections">
           <div class="animalHead" id="bearHead"></div>
           <h3 class="skillsSectionHeader">back-end development</h3>
-          <p>Node, Express</p>
+          <p class="skillsSectionContent">I can work with back-end technologies such as Node & Express.</p>
         </div>
         <div class="skillsSections">
           <div class="animalHead" id="foxHead"></div>
           <h3 class="skillsSectionHeader">project management</h3>
-          <p class="skillsSectionContent">Managed production teams for 3 years</p>
+          <p class="skillsSectionContent">I managed production teams for 3 years and am a natural leader.</p>
         </div>
         <div class="skillsSections">
           <div class="animalHead" id="deerHead"></div>
           <h3 class="skillsSectionHeader">design</h3>
-          <p>Photoshop</p>
+          <p class="skillsSectionContent">I'm a self-taught Photoshop hobbyist who is up to date on the latest UI/UX technologies.</p>
         </div>
       </div>
     </div>
   </div>
   <div class="pages" id="page4">
-    <a id="aboutWrapper" class="smooth"></a>
+    <a id="aboutWrapper"></a>
     <div id="aboutMeBackground">
       <div id="aboutText">
         <h1 id="aboutHeader">About Me</h1>
@@ -180,7 +173,7 @@
     </div>
   </div>
   <div class="pages" id="page5">
-    <a id="contactWrapper" class="smooth"></a>
+    <a id="contactWrapper"></a>
       <div id="contactMeImage">
         <h1 id="contactHeader">Get In Touch</h1>
         <div id="contactParagraph">
@@ -192,5 +185,5 @@
       </div>
   </div>
 </body>
-
+<script type="text/javascript" src="js/app.js"></script>
 </html>
