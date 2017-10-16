@@ -245,9 +245,20 @@ i {
 
 #dogLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#dogSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .workWebsite {
@@ -285,9 +296,20 @@ i {
 
 #gramLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#gramSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #makeMeAnOutfit {
@@ -309,13 +331,67 @@ i {
   font-size: 40px;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 #outfitLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+#outfitSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#explore {
+  background-image: url(../assets/work-thumbs/explorethumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
+}
+
+#explore:hover .workText{
+  bottom: 0;
+  height: 100%;
+}
+
+#exploreItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+#exploreLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#exploreSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 #racers {
   background-image: url(../assets/work-thumbs/divracer.png);
@@ -341,9 +417,20 @@ i {
 
 #racersLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#racersSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #weather {
@@ -370,9 +457,20 @@ i {
 
 #weatherLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#weatherSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #tweeder {
@@ -399,9 +497,60 @@ i {
 
 #tweederLanguages {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#tweederSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#todo {
+  background-image: url(../assets/work-thumbs/explorethumb.png);
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(40%);
+}
+
+#todo:hover .workText{
+  bottom: 0;
+  height: 100%;
+}
+
+#etodoItemHeader {
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+#todoLanguages {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#todoSentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
