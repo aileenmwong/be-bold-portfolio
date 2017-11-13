@@ -135,7 +135,6 @@ i {
 
 #homeHeaderWrap {
   margin-left: 60%;
-
 }
 
 #homeHeader {
@@ -156,13 +155,13 @@ i {
 }
 
 #homeImage {
-  background-image: url(../assets/home-page-no-bowtie.png);
+  background-image: url(../assets/home-page.png);
   background-size: cover;
   height: 700px;
   display: flex;
 }
 
-#bowtie {
+/*#bowtie {
   background-image: url(../assets/bowtie.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -177,7 +176,7 @@ i {
 @keyframes flash {
   0% {opacity: 0;}
   100% {opacity: 1;}
-}
+}*/
 
 @media screen and (max-width: 768px) {
   #homeHeaderWrap {
