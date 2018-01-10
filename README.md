@@ -8,10 +8,10 @@ This is my personal portfolio which includes some highlighted full stack project
 
 ### Projects included: ###
 #### Date a Dog #
-[Date A Dog website](http://dateadog.bitballoon.com)
+[Date A Dog website](http://dateadog.bitballoon.com) is a Javascript dating game to find your new best friend.
 
-Date a Dog is a Javascript dating game to find your new best friend.
 Github: [Date A Dog Github](https://github.com/aileenmwong/date-a-dog)
+
 Technologies Used:
 - HTML 
 - CSS 
