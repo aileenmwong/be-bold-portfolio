@@ -55,6 +55,7 @@ a {
   list-style: none;
   position: relative;
   background-color: white;
+/*  background-color: rgb(219,237,240);*/
 }
 
 .navLink {
@@ -190,11 +191,10 @@ i {
 
 }
 
-/*Work Page*/
+/*WORK STUFF*/
 
 #workWrapper {
   max-width: 100%;
-/*  border: 1px solid black;*/
 }
 
 #workHeader {
@@ -203,18 +203,9 @@ i {
   text-align: center;
 }
 
-#workItemWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .cssSite {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -223,382 +214,100 @@ i {
   text-decoration: underline;
 }
 
+.workItemWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .workItem {
-  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.workImage {
+  background-size: cover;
   height: 300px;
-  position: relative;
-  border: 1px solid gray;
-  margin: 10px;
-  border-radius: 10px;
-  position: relative;
+  width: 45%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid lightgray;
 }
 
-
-#workTextWrapper {
-  position: absolute;
+.dateADog {
+  background-image: url(../assets/work-images/dateadog-wide.png);
 }
 
-#workName {
-  text-align: center;
+.gramCentralStation {
+  background-image: url(../assets/work-images/gramcentral-wide.png);
+}
+
+.italianRacers {
+  background-image: url(../assets/work-images/divracers-wide.png);
+}
+
+.explore {
+  background-image: url(../assets/work-images/explore-wide.png);
 }
 
 .workText {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(150, 41, 56, .9);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-  border-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.deployedSite {
-  margin: 5px;
-}
-
-.github {
-  margin: 5px;
-}
-
-#dateADog {
-  background-image: url(../assets/work-thumbs/dogthumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#dateADog:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#dogItemHeader {
+.itemHeader {
   font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
   margin: 0;
-  color: white;
+  color: black;
+  background-color: lightgray;
+  padding-left: 10px;
 }
 
-#dogLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+.textHeader {
+  font-family: 'Boogaloo', cursive;
+  font-size: 20px;
+  color: black;
 }
 
-#dogSentence {
+.languages {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: black;
+}
+
+.sentence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
 .workWebsite {
+  display: flex;
+  flex-direction: row;
+}
+
+.workLinks {
   font-family: 'Boogaloo', cursive;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
-  background-color: gray;
+  background-color: lightgray;
   padding: 5px;
   border-radius: 5px;
   color: rgb(150, 41, 56);
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-#gramCentralStation {
-  background-image: url(../assets/work-thumbs/gcsthumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
+.workLinks:hover {
+  background-color: silver;
 }
-
-#gramCentralStation:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#gramItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#gramLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#gramSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#makeMeAnOutfit {
-  background-image: url(../assets/work-thumbs/outfitthumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#makeMeAnOutfit:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#outfitItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#outfitLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#outfitSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#explore {
-  background-image: url(../assets/work-thumbs/explorethumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#explore:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#exploreItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#exploreLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#exploreSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-#racers {
-  background-image: url(../assets/work-thumbs/divracer.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#racers:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#racersItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#racersLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#racersSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#weather {
-  background-image: url(../assets/work-thumbs/weatherthumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#weather:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#weatherItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#weatherLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#weatherSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#tweeder {
-  background-image: url(../assets/work-thumbs/tweederthumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#tweeder:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#tweederItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#tweederLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#tweederSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#todo {
-  background-image: url(../assets/work-thumbs/explorethumb.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  filter: grayscale(40%);
-}
-
-#todo:hover .workText{
-  bottom: 0;
-  height: 100%;
-}
-
-#todoItemHeader {
-  font-family: 'Boogaloo', cursive;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-#todoLanguages {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#todoSentence {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 
 /*Skills Page*/
 #skillsWrapper {
@@ -648,7 +357,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 40px 20px 40px;
+  padding: 20px 40px 20px 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -793,7 +502,7 @@ span {
 
 #contactButton {
   width: 500px;
-  height: 50px;
+  height: 100px;
   margin: 0 auto;
   background-color: rgb(233,231,232);
   text-decoration: none;
@@ -803,7 +512,7 @@ span {
   padding: 20px;
   font-family: 'Boogaloo', cursive;
   font-size: 40px;
-  color: rgba(148, 176, 167, 1);
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
