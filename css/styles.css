@@ -35,6 +35,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  color: whitesmoke;
+  size: 1px;
+  width: 60%;
+}
+
 .pages {
   margin-top: 0;
   margin-bottom: 0;
