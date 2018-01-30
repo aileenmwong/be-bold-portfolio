@@ -8,7 +8,7 @@ font-family: 'Raleway', sans-serif;
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop
 */
 
-/*MAIN STYLES*/
+/*Main Styles*/
 
 body {
   padding-top: 30px;
@@ -166,11 +166,11 @@ i {
 
 /*WORK STUFF*/
 
-#workWrapper {
+.workWrapper {
   max-width: 100%;
 }
 
-#workHeader {
+.workHeader {
   font-family: 'Boogaloo', cursive;
   font-size: 40px;
   text-align: center;
@@ -283,17 +283,18 @@ i {
 }
 
 /*Skills Page*/
-#skillsWrapper {
+
+.skillsWrapper {
   max-width: 100%;
 }
 
-#skillsHeader {
+.skillsHeader {
   font-family: 'Boogaloo', cursive;
   font-size: 40px;
   text-align: center;
 }
 
-#skillsSectionWrapper {
+.skillsSectionWrapper {
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -301,7 +302,7 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  #skillsSectionWrapper {
+  .skillsSectionWrapper {
   flex-wrap: wrap;
   }
 }
@@ -372,12 +373,12 @@ i {
 
 /*About Page*/
 
-#aboutWrapper {
+.aboutWrapper {
   max-width: 100%;
   padding-bottom: 30px;
 }
 
-#aboutMeBackground {
+.aboutMeBackground {
   background-image: url(../assets/about-me.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -388,7 +389,7 @@ i {
   background-position: left bottom;
 }
 
-#aboutText {
+.aboutText {
   width: 600px;
   height: 600px;
   background-color: rgba(0,0,0,.7);
@@ -398,7 +399,7 @@ i {
   border-radius: 10px;
 }
 
-#aboutHeader {
+.aboutHeader {
   font-family: 'Boogaloo', cursive;
   font-size: 50px;
   text-align: center;
@@ -416,7 +417,7 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  #aboutText {
+  .aboutText {
     height: 97%;
     margin: 10px 10px 0 10px;
   }
@@ -427,13 +428,14 @@ span {
 }
 
 /*Contact Page*/
-#contactWrapper {
+
+.contactWrapper {
   max-width: 100%;
   border: 1px solid black;
   margin-top: 0;
 }
 
-#contactMeImage {
+.contactMeImage {
   background-image: url(../assets/contact-me.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -442,7 +444,7 @@ span {
   background-position: left bottom;
 }
 
-#contactHeader {
+.contactHeader {
   font-family: 'Boogaloo', cursive;
   font-size: 50px;
   text-align: center;
@@ -451,7 +453,7 @@ span {
   margin-top: 0;
 }
 
-#contactParagraph {
+.contactParagraph {
   margin: 0 auto;
   max-width: 70%;
 /*  border: 1px solid black;*/
@@ -461,7 +463,7 @@ span {
   padding: 10px;
 }
 
-#contactButton {
+.contactButton {
   width: 500px;
   height: 100px;
   margin: 0 auto;
@@ -477,20 +479,20 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  #contactMeImage {
+  .contactMeImage {
     height: 100%;
   }
-  #contactButton {
+  .contactButton {
     width: 50%;
     height: 30%;
     margin-bottom: 15%;
     font-size: 30px;
   }
-  #contactParagraph {
+  .contactParagraph {
     font-size: 20px;
     padding-bottom: 5%;
   }
-  #contactHeader {
+  .contactHeader {
     padding-bottom: 0;
   }
 }
