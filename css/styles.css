@@ -39,12 +39,23 @@ hr {
   width: 30%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .pages {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
   font-size:0;
+  position: relative;
+}
+
+#page1 {
+  height: 600px;
 }
 
 /*Header*/
@@ -120,8 +131,9 @@ i {
 
 .homeWrapper {
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   margin-top: 10px;
+  display: inline;
 }
 
 .homeImage {
@@ -165,7 +177,9 @@ i {
   .homeImage {
     visibility: hidden;
   }
-
+  #page1 {
+    height: auto;
+  }
 }
 
 /*WORK STUFF*/
