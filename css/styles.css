@@ -412,6 +412,21 @@ i {
   margin: 30px;
 }
 
+.animalHead:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(10deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
 #bunnyHead {
   background-image: url(../assets/animal-heads/bunny-head.png);
 }
