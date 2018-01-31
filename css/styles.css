@@ -85,10 +85,10 @@ main {
 }
 
 .navLink:hover {
-  background-color: goldenrod;
+  background-color: rgba(150, 41, 56, .8);
 }
 
-.socialLinks {
+.socialLinkGroup {
   position: relative;
   text-align: right;
   background-color: white;
@@ -102,6 +102,14 @@ i {
 
 #emailLink {
   margin-right: 10px;
+}
+
+.socialLink {
+  color: black;
+}
+
+.socialLink:hover {
+  color: rgb(150, 41, 56);
 }
 
 @media screen and (max-width: 768px) {
@@ -124,6 +132,9 @@ i {
     flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .navBar {
+    margin-bottom: 10px;
   }
 }
 
