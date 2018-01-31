@@ -233,10 +233,18 @@ i {
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
-  width: 45%;
+  width: 90%;
   padding-left: 20px;
   padding-right: 20px;
 /*  border: 1px solid lightgray;*/
+}
+
+.imageLink {
+  width: 100%;
+}
+
+.imageLink:hover {
+  opacity: .7;
 }
 
 .dateADog {
@@ -258,7 +266,7 @@ i {
 .workText {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 90%;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -312,6 +320,8 @@ i {
   background-color: silver;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .workItem {
     display: flex;
@@ -332,7 +342,6 @@ i {
   }
   .workWebsite {
     margin: 0 auto;
-  }
   }
 }
 
