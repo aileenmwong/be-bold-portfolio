@@ -561,7 +561,7 @@ span {
     padding-bottom: 0;
   }
   .contactText {
-    background-color: rgb(194,235,220);
+    background-color: rgba(150, 41, 56, .9);
     padding: 20px;
   }
 }
