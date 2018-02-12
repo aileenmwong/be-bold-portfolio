@@ -263,6 +263,10 @@ i {
   background-image: url(../assets/work-images/explore-wide.png);
 }
 
+.makeMeAnOutfit {
+  background-image: url(../assets/work-images/outfit.png);
+}
+
 .workText {
   display: flex;
   flex-direction: column;
