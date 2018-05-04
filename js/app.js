@@ -1,7 +1,4 @@
 
-// Change the speed to whatever you want
-// Personally i think 1000 is too much
-// Try 800 or below, it seems not too much but it will make a difference
 // Sticky header code below from:
 // https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
 
